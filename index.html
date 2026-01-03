@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data Space - Kelajak kasblari markazi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#FFD100',
+              dark: '#111111',
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+            maxWidth: {
+              '8xl': '1400px',
+            },
+            animation: {
+              'logo-pop': 'logo-pop 2s ease-in-out infinite',
+              'fade-in-slow': 'fade-in-slow 1.2s ease-out forwards',
+              'sun-glow': 'sun-glow 25s ease-in-out infinite',
+              'spin-slow': 'spin-slow 40s linear infinite',
+              'pulse-dot': 'pulse-dot 3s ease-in-out infinite',
+              'subtle-drift': 'subtle-drift 20s ease-in-out infinite',
+              'pan-grid': 'pan-grid 60s linear infinite',
+            },
+            keyframes: {
+              'logo-pop': {
+                '0%, 100%': { transform: 'scale(1)' },
+                '50%': { transform: 'scale(1.1)' },
+              },
+              'fade-in-slow': {
+                '0%': { opacity: 0, transform: 'translateY(10px)' },
+                '100%': { opacity: 1, transform: 'translateY(0)' },
+              },
+              'sun-glow': {
+                '0%': { transform: 'scale(1) rotate(0deg)', opacity: 0.7 },
+                '50%': { transform: 'scale(1.15) rotate(20deg)', opacity: 1 },
+                '100%': { transform: 'scale(1) rotate(0deg)', opacity: 0.7 },
+              },
+              'spin-slow': {
+                '0%': { transform: 'rotate(0deg)' },
+                '100%': { transform: 'rotate(360deg)' },
+              },
+              'pulse-dot': {
+                '0%, 100%': { r: '8', opacity: 1 },
+                '50%': { r: '12', opacity: 0.5 },
+              },
+              'subtle-drift': {
+                '0%': { transform: 'translate(0, 0)', opacity: 0.2 },
+                '25%': { transform: 'translate(10px, -20px)', opacity: 0.4 },
+                '50%': { transform: 'translate(-10px, 20px)', opacity: 0.1 },
+                '75%': { transform: 'translate(20px, 10px)', opacity: 0.5 },
+                '100%': { transform: 'translate(0, 0)', opacity: 0.2 },
+              },
+              'pan-grid': {
+                '0%': { backgroundPosition: '0% 0%' },
+                '100%': { backgroundPosition: '100% 100%' },
+              }
+            }
+          },
+        },
+      }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+      /* For Webkit-based browsers (Chrome, Safari, Edge) */
+      ::-webkit-scrollbar {
+        width: 10px;
+      }
+
+      ::-webkit-scrollbar-track {
+        background: #111111;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background-color: #FFD100;
+        border-radius: 20px;
+        border: 2px solid #111111;
+      }
+      
+      /* For Firefox */
+      html {
+        scrollbar-width: thin;
+        scrollbar-color: #FFD100 #111111;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.9.3"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
